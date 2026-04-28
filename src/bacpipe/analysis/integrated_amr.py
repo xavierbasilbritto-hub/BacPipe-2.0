@@ -29,7 +29,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 # AMRFinderPlus integration
-from amrfinderplus import (
+from .amrfinderplus import (
     AMRFinderConfig,
     AMRFinderInputType,
     AMRFinderPlusRunner,

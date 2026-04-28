@@ -9,16 +9,16 @@
 
 **Enhanced by BSB (Basil Britto Xavier) - UMCG, DRAIGON Project (Grant No. 101137383)**
 
-> ## ⚠️ Alpha scaffold — not yet runnable end-to-end
+> ## ⚠️ Alpha — partial coverage
 >
-> This repository is an **alpha scaffold** (`v2.0.0-alpha.1`). The architecture, install scripts, CI, and the AMRFinderPlus / ONT assembler / mcr-vanP analysis modules are in place, but the top-level CLI (`bacpipe`), batch runner, and GUI entry points referenced below are **not yet implemented**. Quick-start commands using `python -m bacpipe.cli ...`, `bacpipe-gui`, and `bacpipe --test` will fail with `ModuleNotFoundError` until the CLI lands.
->
-> What works today:
-> - `pip install -e .` (installs the package and its Python deps)
-> - `scripts/install.sh` (creates the conda env and pulls bioconda tools + DBs)
-> - Direct invocation of the analysis wrappers, e.g. `python -m bacpipe.analysis.integrated_amr ...`
->
-> Track progress / open an issue: https://github.com/xavierbasilbritto-hub/BacPipe-2.0/issues
+> This is `v2.0.0-alpha.1`. **Working today:** the `bacpipe` CLI, the `bacpipe-gui`
+> Streamlit dashboard, AMRFinderPlus integration (`bacpipe amr`, `bacpipe amrfinder`),
+> the `IntegratedAMRAnalyser` (AMRFinderPlus + custom mcr/vanP BLAST), the ONT
+> assembler wrappers, and the database manager. **Not yet implemented:** the batch
+> runner (`bacpipe.batch`), the full end-to-end pipeline orchestrator
+> (`bacpipe.core.pipeline._run_*` are placeholders), and the standalone
+> `bacpipe-mcr` / `bacpipe-vanp` CLIs. Track progress:
+> https://github.com/xavierbasilbritto-hub/BacPipe-2.0/issues
 
 BacPipe 2.0 represents a complete modernization of bacterial whole genome sequencing analysis, with specialized focus on antimicrobial resistance (AMR) research. This version adds Oxford Nanopore Technology (ONT) support, enhanced mcr/vanP detection, and a modern cross-platform GUI.
 
@@ -85,29 +85,36 @@ python setup.py install
 bash scripts/setup_databases.sh
 ```
 
-### **2. Quick Test Run**
+### **2. Quick CLI test (what works today)**
 ```bash
-# Activate environment
-conda activate bacpipe
+# What's installed and what's missing?
+bacpipe info
 
-# Run with test data
-python -m bacpipe.cli \
-  --input tests/data/test_samples/MRSA_R1.fastq.gz \
-  --input tests/data/test_samples/MRSA_R2.fastq.gz \
-  --platform illumina \
-  --assembler spades \
-  --modules qc,assembly,amr,mcr_screening \
-  --output results/test_run
+# Run integrated AMR analysis on an existing assembly
+bacpipe amr \
+  --sample-id TEST \
+  --assembly path/to/assembly.fasta \
+  --species "Escherichia coli"
+
+# Or call AMRFinderPlus directly
+bacpipe amrfinder \
+  --sample-id TEST \
+  --nucleotide path/to/assembly.fasta \
+  --organism "Escherichia coli" \
+  --update-db
 ```
 
-### **3. Launch GUI**
+### **3. Launch the GUI**
 ```bash
-# Web interface (localhost:3000)
-python -m bacpipe.gui.web
-
-# Or Electron desktop app
-python -m bacpipe.gui.electron
+# Streamlit dashboard at http://localhost:8501
+bacpipe gui
+# or, equivalently:
+bacpipe-gui
 ```
+
+The GUI lets you upload an assembly FASTA (and optionally a Prokka protein
+FASTA + GFF), pick a species, and run integrated AMR analysis with interactive
+result tables and downloadable JSON / TSV.
 
 ---
 

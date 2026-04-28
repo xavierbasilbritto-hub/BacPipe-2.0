@@ -115,14 +115,12 @@ setup(
         ]
     },
     
-    # Console scripts
+    # Console scripts. Only modules that actually exist today are wired up;
+    # specialised mcr / vanP CLIs will be added when those modules land.
     entry_points={
         "console_scripts": [
             "bacpipe=bacpipe.cli:main",
             "bacpipe-gui=bacpipe.gui.web:main",
-            "bacpipe-update-db=bacpipe.databases.update:main",
-            "bacpipe-mcr=bacpipe.analysis.mcr_detector:main",
-            "bacpipe-vanp=bacpipe.analysis.vanp_detector:main"
         ]
     },
     

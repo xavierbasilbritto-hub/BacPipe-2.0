@@ -29,6 +29,9 @@ fastapi>=0.100.0
 uvicorn>=0.22.0
 websockets>=11.0.0
 
+# GUI (Streamlit dashboard — `bacpipe gui`)
+streamlit>=1.25.0
+
 # Visualization
 plotly>=5.15.0
 matplotlib>=3.7.0
