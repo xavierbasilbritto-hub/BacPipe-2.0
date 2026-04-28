@@ -148,7 +148,7 @@ title: "BacPipe 2.0: Modern bacterial WGS pipeline with ONT support and AMRFinde
 authors:
   - family-names: Xavier
     given-names: Basil Britto
-    affiliation: "University Medical Center Groningen (UMCG); DRAIGON Project"
+    affiliation: "DRAIGON Project; DRAIGON Project"
     orcid: "https://orcid.org/0000-0000-0000-0000"   # <-- add your ORCID
 version: "2.0.0"
 date-released: "2026-04-28"
@@ -279,7 +279,7 @@ will need their remote updated:
    These drive discoverability in GitHub search.
 4. **Description (top of repo page):** "Modern bacterial WGS pipeline —
    ONT + Illumina + hybrid, AMRFinderPlus + mcr/vanP, cross-platform GUI.
-   UMCG / DRAIGON Project."
+   DRAIGON Project."
 5. **Link the original** — add a paragraph to README:
    *"BacPipe 2.0 is a substantially rewritten successor to BacPipe (Xavier
    et al., iScience 2020). The original repository remains available at

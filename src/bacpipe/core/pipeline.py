@@ -1,6 +1,6 @@
 # BacPipe 2.0 - Modern Bacterial Genomics Pipeline
 # Enhanced with ONT Support, Updated Databases, and Cross-Platform GUI
-# BSB (Basil Britto Xavier) - UMCG/DRAIGON Project
+# Basil Britto Xavier — DRAIGON Project
 
 import os
 import sys
@@ -65,7 +65,7 @@ class SampleConfig:
 class PipelineConfig:
     """Main pipeline configuration"""
     version: str = "2.0.0"
-    author: str = "BSB - UMCG/DRAIGON Project"
+    author: str = "Basil Britto Xavier — DRAIGON Project"
     
     # Resource settings
     threads: int = 8
@@ -341,10 +341,10 @@ if __name__ == "__main__":
     
     # Example sample configuration
     sample = SampleConfig(
-        sample_id="BSB_MRSA_001",
+        sample_id="DEMO_MRSA_001",
         platform=SequencingPlatform.ILLUMINA,
         read_files=["sample_R1.fastq.gz", "sample_R2.fastq.gz"],
-        output_dir="output/BSB_MRSA_001",
+        output_dir="output/DEMO_MRSA_001",
         assembly_method=AssemblyMethod.SPADES,
         modules=[
             AnalysisModule.QUALITY_CONTROL,
@@ -356,7 +356,7 @@ if __name__ == "__main__":
     )
     
     print("🧬 BacPipe 2.0 - Modern Bacterial Genomics Pipeline")
-    print("👨‍🔬 Enhanced for AMR research by BSB (UMCG/DRAIGON)")
+    print("👨‍🔬 Maintained by Basil Britto Xavier (DRAIGON Project)")
     print(f"📋 Sample: {sample.sample_id}")
     print(f"🔬 Platform: {sample.platform.value}")
     print(f"🧩 Assembly: {sample.assembly_method.value}")

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # BacPipe 2.0 — installation script
-# BSB (Basil Britto Xavier) — UMCG / DRAIGON Project
+# Basil Britto Xavier — DRAIGON Project
 #
 # Usage:
 #   bash scripts/install.sh           # full install (conda env + tools + DBs)

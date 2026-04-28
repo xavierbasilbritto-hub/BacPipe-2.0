@@ -2,7 +2,7 @@
 ## Advanced Bacterial Genomics Pipeline with ONT Support & AI-Enhanced AMR Detection
 
 **Target Repository**: `https://github.com/wholeGenomeSequencingAnalysisPipeline/BacPipe`
-**Lead**: BSB (Basil Britto Xavier) - AMR Genomics Bioinformatician, UMCG/DRAIGON Project
+**Lead**: Basil Britto Xavier - AMR Genomics Bioinformatician, DRAIGON Project
 
 ---
 
@@ -217,7 +217,7 @@ class DatabaseManager:
 
 ---
 
-## 📈 **Integration with BSB's Research Profile**
+## 📈 **Integration with AMR Research Profile**
 
 ### **Publication Opportunities**
 - "BacPipe 2.0: Modernized bacterial genomics with enhanced colistin resistance detection"

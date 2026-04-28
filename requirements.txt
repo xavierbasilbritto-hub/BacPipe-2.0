@@ -1,5 +1,5 @@
 # BacPipe 2.0 - Python runtime dependencies
-# BSB (Basil Britto Xavier) - UMCG/DRAIGON Project
+# Basil Britto Xavier — DRAIGON Project
 #
 # Python version requirement is enforced via setup.py (python_requires=">=3.11").
 # Optional extras (ai, dev, docs, gui) are declared in setup.py extras_require —

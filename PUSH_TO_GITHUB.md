@@ -51,7 +51,7 @@ git push origin v2.0.0-alpha.1
 - [ ] Add your **ORCID** to `CITATION.cff` (line is commented out).
 - [ ] Verify the **author list of the original 2020 iScience paper** in `CITATION.cff` is complete — currently only you and Mysara are listed as a starting point.
 - [ ] Replace `LICENSE.NOTE.md` with the real GPL-3.0 text (one curl command above).
-- [ ] Skim `README.md` for any UMCG-internal contact details you'd rather not publish.
+- [ ] Skim `README.md` for any internal contact details you'd rather not publish.
 
 ## What's in this folder
 

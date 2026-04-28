@@ -1,6 +1,6 @@
 // BacPipe 2.0 - Modern Cross-Platform GUI
 // Scientific precision meets modern elegance
-// BSB (Basil Britto Xavier) - UMCG/DRAIGON Project
+// Basil Britto Xavier — DRAIGON Project
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -69,7 +69,7 @@ const BacPipeGUI = () => {
                 BacPipe <span className="text-lg text-cyan-600 font-normal">2.0</span>
               </h1>
               <p className="text-sm text-slate-600 font-medium">
-                Advanced Bacterial Genomics • AMR Detection • BSB/DRAIGON
+                Advanced Bacterial Genomics • AMR Detection • DRAIGON Project
               </p>
             </div>
           </div>
@@ -195,7 +195,7 @@ const SampleManagementTab = ({ samples, setSamples, sampleConfig, setSampleConfi
             <input
               type="text"
               className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
-              placeholder="e.g., BSB_MRSA_001"
+              placeholder="e.g., SAMPLE_001"
               value={sampleConfig.sampleId}
               onChange={(e) => setSampleConfig(prev => ({ ...prev, sampleId: e.target.value }))}
             />

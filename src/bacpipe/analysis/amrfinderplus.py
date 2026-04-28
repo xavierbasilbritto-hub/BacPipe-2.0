@@ -12,7 +12,7 @@ References:
   - DB:   https://ftp.ncbi.nlm.nih.gov/pathogen/Antimicrobial_resistance/AMRFinderPlus/database/latest
   - Cite: Feldgarden et al., Sci Rep 2021, 11:12728
 
-BSB (Basil Britto Xavier) — UMCG / DRAIGON Project
+Basil Britto Xavier — DRAIGON Project
 """
 
 from __future__ import annotations

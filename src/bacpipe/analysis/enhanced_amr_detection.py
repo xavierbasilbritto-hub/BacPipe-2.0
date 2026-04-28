@@ -1,6 +1,6 @@
 # BacPipe 2.0 - Enhanced AMR Detection Modules
-# Specialized mcr & vanP Detection for BSB's Research Focus
-# BSB (Basil Britto Xavier) - UMCG/DRAIGON Project
+# Specialized mcr & vanP Detection
+# Basil Britto Xavier — DRAIGON Project
 
 import os
 import sys
@@ -503,7 +503,7 @@ class EnhancedAMRDetector:
             f.write(f"BacPipe 2.0 - Enhanced AMR Analysis Report\n")
             f.write(f"Sample: {profile.sample_id}\n")
             f.write(f"Analysis Date: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-            f.write(f"BSB (UMCG/DRAIGON Project) - Enhanced AMR Detection\n")
+            f.write("BacPipe 2.0 — Enhanced AMR Detection (DRAIGON Project)\n")
             f.write("=" * 80 + "\n\n")
             
             # Summary
@@ -599,13 +599,13 @@ async def main():
     amr_detector = EnhancedAMRDetector(database_dir)
     
     # Example analysis
-    sample_id = "BSB_MRSA_mcr_001"
+    sample_id = "DEMO_MRSA_mcr_001"
     assembly_file = "/path/to/assembly.fasta"  # Would be real path
     output_dir = f"output/{sample_id}/amr_analysis"
     
     print("🛡️ BacPipe 2.0 - Enhanced AMR Detection")
     print("🎯 Specialized mcr & vanP Detection")
-    print(f"👨‍🔬 BSB (UMCG/DRAIGON Project)")
+    print("👨‍🔬 DRAIGON Project")
     print(f"📋 Sample: {sample_id}")
     print(f"💾 Output: {output_dir}")
     

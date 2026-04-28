@@ -1,6 +1,6 @@
 # BacPipe 2.0 - ONT Assembler Modules
 # Long-read assembly support for Oxford Nanopore Technologies
-# BSB (Basil Britto Xavier) - UMCG/DRAIGON Project
+# Basil Britto Xavier — DRAIGON Project
 
 import os
 import sys
@@ -488,7 +488,7 @@ async def main():
     manager = ONTAssemblyManager(config)
     
     # Example assembly (would need real files)
-    sample_id = "BSB_MRSA_ONT_001"
+    sample_id = "DEMO_MRSA_ONT_001"
     input_reads = "/path/to/ont_reads.fastq.gz"  # Would be real path
     output_dir = f"output/{sample_id}"
     

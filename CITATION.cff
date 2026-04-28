@@ -9,9 +9,7 @@ type: software
 authors:
   - family-names: Xavier
     given-names: Basil Britto
-    affiliation: >-
-      University Medical Center Groningen (UMCG); DRAIGON Project
-      (EU Horizon Europe, Grant No. 101137383)
+    affiliation: "DRAIGON Project"
     orcid: "https://orcid.org/0000-0002-5897-0240"
 version: "2.0.0-alpha.1"
 date-released: "2026-04-28"

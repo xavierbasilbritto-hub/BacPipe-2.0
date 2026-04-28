@@ -2,7 +2,7 @@
 """
 BacPipe 2.0 - Modern Bacterial Genomics Pipeline
 Setup script for Python package installation
-BSB (Basil Britto Xavier) - UMCG/DRAIGON Project
+Basil Britto Xavier — DRAIGON Project
 """
 
 import os
@@ -55,10 +55,10 @@ setup(
     long_description_content_type="text/markdown",
     
     # Author information
-    author="BSB (Basil Britto Xavier)",
-    author_email="basilbritto.xavier@umcg.nl",
-    maintainer="BSB (Basil Britto Xavier)",
-    maintainer_email="basilbritto.xavier@umcg.nl",
+    author="Basil Britto Xavier",
+    author_email="xavierbasilbritto@gmail.com",
+    maintainer="Basil Britto Xavier",
+    maintainer_email="xavierbasilbritto@gmail.com",
     
     # Project URLs
     url="https://github.com/xavierbasilbritto-hub/BacPipe-2.0",
@@ -185,5 +185,5 @@ Next steps:
 3. Launch GUI: bacpipe-gui
 4. Read documentation: https://bacpipe.readthedocs.io
 
-For support: basilbritto.xavier@umcg.nl
+For support: xavierbasilbritto@gmail.com
 """)

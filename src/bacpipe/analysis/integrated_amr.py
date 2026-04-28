@@ -15,7 +15,7 @@ Combines three complementary engines:
 The integrated profile cross-references hits between engines and reports
 a confidence-weighted summary.
 
-BSB (Basil Britto Xavier) — UMCG / DRAIGON Project
+Basil Britto Xavier — DRAIGON Project
 """
 
 from __future__ import annotations
@@ -79,7 +79,7 @@ class IntegratedAMRProfile:
     virulence_factors: List[IntegratedHit]
     stress_response: List[IntegratedHit]
 
-    # Specialised summaries (BSB's research focus)
+    # Specialised summaries (mcr / van convenience extracts)
     mcr_hits: List[IntegratedHit]
     van_hits: List[IntegratedHit]              # All van* (vanA, vanB, vanP, ...)
     vanP_hits: List[IntegratedHit]             # vanP cluster only

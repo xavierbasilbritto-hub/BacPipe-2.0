@@ -7,7 +7,7 @@
 
 ## 🧬 Advanced Bacterial Genomics Pipeline with ONT Support & AI-Enhanced AMR Detection
 
-**Enhanced by BSB (Basil Britto Xavier) - UMCG, DRAIGON Project (Grant No. 101137383)**
+**Maintained by Basil Britto Xavier — DRAIGON Project**
 
 > ## ⚠️ Alpha — partial coverage
 >
@@ -336,7 +336,7 @@ flake8 src/ tests/
 ### **Getting Help**
 - **GitHub Issues**: Bug reports and feature requests
 - **Discussions**: General questions and community support
-- **Email**: basilbritto.xavier@umcg.nl (BSB - Lead Developer)
+- **Email**: xavierbasilbritto@gmail.com (Lead Developer)
 
 ### **Citation**
 If you use BacPipe 2.0 in your research, please cite:
@@ -359,8 +359,7 @@ for clinical diagnostic bacteriology. Microb Biotechnol. 14:204-217.
 ## 🏆 **Funding & Acknowledgments**
 
 This work is supported by:
-- **EU Horizon Europe DRAIGON Project** (Grant No. 101137383)
-- **University Medical Center Groningen (UMCG)**
+- **EU Horizon Europe DRAIGON Project**
 - **AMR, Epidemiology and Genomics Research Group**
 
 Special thanks to the original BacPipe developers and the bacterial genomics community.
@@ -386,4 +385,4 @@ See [LICENSE](LICENSE) for full license text.
 
 *BacPipe 2.0 - Empowering antimicrobial resistance research through modern genomics*
 
-**🧬 Enhanced by BSB (Basil Britto Xavier) | 👨‍🔬 UMCG/DRAIGON Project**
+**🧬 Maintained by Basil Britto Xavier | 👨‍🔬 DRAIGON Project**
