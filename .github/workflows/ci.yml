@@ -88,4 +88,4 @@ jobs:
         shell: bash -l {0}
         run: |
           pip install pandas
-          python -c "import sys; sys.path.insert(0, 'src/bacpipe/analysis'); import amrfinderplus; print('amrfinderplus module OK')"
+          PYTHONPATH=src python -c "from bacpipe.analysis import amrfinderplus; print('amrfinderplus module OK')"

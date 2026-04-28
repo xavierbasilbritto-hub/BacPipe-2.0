@@ -61,11 +61,10 @@ setup(
     maintainer_email="basilbritto.xavier@umcg.nl",
     
     # Project URLs
-    url="https://github.com/wholeGenomeSequencingAnalysisPipeline/BacPipe",
+    url="https://github.com/xavierbasilbritto-hub/BacPipe-2.0",
     project_urls={
-        "Documentation": "https://bacpipe.readthedocs.io",
-        "Source": "https://github.com/wholeGenomeSequencingAnalysisPipeline/BacPipe",
-        "Tracker": "https://github.com/wholeGenomeSequencingAnalysisPipeline/BacPipe/issues",
+        "Source": "https://github.com/xavierbasilbritto-hub/BacPipe-2.0",
+        "Tracker": "https://github.com/xavierbasilbritto-hub/BacPipe-2.0/issues",
         "DRAIGON Project": "https://draigon-project.eu",
         "BSB Data Science": "https://bsbdatascienceservices.com"
     },

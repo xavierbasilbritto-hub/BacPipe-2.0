@@ -1,11 +1,13 @@
-# BacPipe 2.0 - Python Dependencies
+# BacPipe 2.0 - Python runtime dependencies
 # BSB (Basil Britto Xavier) - UMCG/DRAIGON Project
+#
+# Python version requirement is enforced via setup.py (python_requires=">=3.11").
+# Optional extras (ai, dev, docs, gui) are declared in setup.py extras_require —
+# install with: pip install -e ".[dev]" or ".[ai]"
+# External bioinformatics binaries (fastp, multiqc, spades, flye, etc.) are
+# installed via conda/bioconda — see scripts/install.sh.
 
-# Core Python dependencies
-python>=3.11
-
-# Async and concurrency
-asyncio
+# Async / concurrency
 aiofiles>=0.8.0
 aiohttp>=3.8.0
 
@@ -22,93 +24,43 @@ toml>=0.10.0
 click>=8.0.0
 typer>=0.9.0
 
-# Web framework and GUI
+# Web framework
 fastapi>=0.100.0
 uvicorn>=0.22.0
 websockets>=11.0.0
-streamlit>=1.25.0
 
-# Data visualization
+# Visualization
 plotly>=5.15.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
 
-# File handling and compression
+# File handling
 openpyxl>=3.1.0
 xlsxwriter>=3.1.0
 reportlab>=4.0.0
 
-# Logging and monitoring
+# Logging / UX
 loguru>=0.7.0
 rich>=13.0.0
 tqdm>=4.65.0
 
-# Testing and development
-pytest>=7.4.0
-pytest-asyncio>=0.21.0
-pytest-cov>=4.1.0
-black>=23.0.0
-flake8>=6.0.0
-mypy>=1.4.0
-
-# Docker and containerization
-docker>=6.1.0
-
-# Bioinformatics tools integration
+# Workflow / orchestration
 snakemake>=7.30.0
 
-# Optional ML/AI dependencies (for DRAIGON integration)
-torch>=2.0.0;extra=="ai"
-transformers>=4.30.0;extra=="ai"
-scikit-bio>=0.5.8;extra=="ai"
-
-# Development dependencies
-pre-commit>=3.3.0;extra=="dev"
-sphinx>=7.0.0;extra=="docs"
-sphinx-rtd-theme>=1.3.0;extra=="docs"
-
-# Database connectors
+# Database / network
 sqlalchemy>=2.0.0
-sqlite3
-
-# Network and download utilities
 requests>=2.31.0
 urllib3>=2.0.0
 
-# Process management
+# Process / parallel
 psutil>=5.9.0
-
-# Parallel processing
 joblib>=1.3.0
 multiprocessing-logging>=0.3.0
 
-# Quality control
-fastp  # External tool
-multiqc  # External tool
+# Containerization (Python client)
+docker>=6.1.0
 
-# Assembly tools (via conda/bioconda)
-# spades  # conda install -c bioconda spades
-# flye    # conda install -c bioconda flye  
-# canu    # conda install -c bioconda canu
-# unicycler  # conda install -c bioconda unicycler
-# raven-assembler  # conda install -c bioconda raven-assembler
-
-# Analysis tools (via conda/bioconda)  
-# prokka  # conda install -c bioconda prokka
-# bakta   # conda install -c bioconda bakta
-# mlst    # conda install -c bioconda mlst
-# blast   # conda install -c bioconda blast
-# hmmer   # conda install -c bioconda hmmer
-
-# Polishing tools (via conda/bioconda)
-# medaka  # conda install -c bioconda medaka
-# racon   # conda install -c bioconda racon
-
-# Phylogenetics (via conda/bioconda)
-# parsnp  # conda install -c bioconda parsnp
-# iqtree  # conda install -c bioconda iqtree
-
-# Platform-specific dependencies
+# Platform-specific
 pywin32>=306;platform_system=="Windows"
 python-magic>=0.4.0;platform_system=="Linux"
 python-magic-bin>=0.4.0;platform_system=="Windows"

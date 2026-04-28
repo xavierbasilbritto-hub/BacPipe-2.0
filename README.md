@@ -9,6 +9,17 @@
 
 **Enhanced by BSB (Basil Britto Xavier) - UMCG, DRAIGON Project (Grant No. 101137383)**
 
+> ## ⚠️ Alpha scaffold — not yet runnable end-to-end
+>
+> This repository is an **alpha scaffold** (`v2.0.0-alpha.1`). The architecture, install scripts, CI, and the AMRFinderPlus / ONT assembler / mcr-vanP analysis modules are in place, but the top-level CLI (`bacpipe`), batch runner, and GUI entry points referenced below are **not yet implemented**. Quick-start commands using `python -m bacpipe.cli ...`, `bacpipe-gui`, and `bacpipe --test` will fail with `ModuleNotFoundError` until the CLI lands.
+>
+> What works today:
+> - `pip install -e .` (installs the package and its Python deps)
+> - `scripts/install.sh` (creates the conda env and pulls bioconda tools + DBs)
+> - Direct invocation of the analysis wrappers, e.g. `python -m bacpipe.analysis.integrated_amr ...`
+>
+> Track progress / open an issue: https://github.com/xavierbasilbritto-hub/BacPipe-2.0/issues
+
 BacPipe 2.0 represents a complete modernization of bacterial whole genome sequencing analysis, with specialized focus on antimicrobial resistance (AMR) research. This version adds Oxford Nanopore Technology (ONT) support, enhanced mcr/vanP detection, and a modern cross-platform GUI.
 
 ---
