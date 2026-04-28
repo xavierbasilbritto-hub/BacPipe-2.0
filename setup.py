@@ -65,8 +65,7 @@ setup(
     project_urls={
         "Source": "https://github.com/xavierbasilbritto-hub/BacPipe-2.0",
         "Tracker": "https://github.com/xavierbasilbritto-hub/BacPipe-2.0/issues",
-        "DRAIGON Project": "https://draigon-project.eu",
-        "BSB Data Science": "https://bsbdatascienceservices.com"
+        "DRAIGON Project": "https://draigon-project.eu"
     },
     
     # Package discovery

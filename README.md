@@ -374,7 +374,6 @@ See [LICENSE](LICENSE) for full license text.
 - **Documentation**: https://bacpipe.readthedocs.io
 - **Docker Hub**: https://hub.docker.com/r/bacpipe/bacpipe
 - **DRAIGON Project**: https://draigon-project.eu
-- **BSB Data Science Services**: https://bsbdatascienceservices.com
 
 ---
 
