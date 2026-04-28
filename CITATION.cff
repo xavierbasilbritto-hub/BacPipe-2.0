@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+message: >-
+  If you use BacPipe 2.0, please cite both this software and the
+  original BacPipe paper (Xavier et al., iScience 2020).
+title: >-
+  BacPipe 2.0: Modern bacterial WGS pipeline with ONT support and
+  AMRFinderPlus integration
+type: software
+authors:
+  - family-names: Xavier
+    given-names: Basil Britto
+    affiliation: >-
+      University Medical Center Groningen (UMCG); DRAIGON Project
+      (EU Horizon Europe, Grant No. 101137383)
+    orcid: "https://orcid.org/0000-0002-5897-0240"
+version: "2.0.0-alpha.1"
+date-released: "2026-04-28"
+license: GPL-3.0-or-later
+repository-code: "https://github.com/xavierbasilbritto-hub/BacPipe-2.0"
+keywords:
+  - bioinformatics
+  - bacterial-genomics
+  - antimicrobial-resistance
+  - amrfinderplus
+  - oxford-nanopore
+  - mcr
+  - vanp
+  - whole-genome-sequencing
+references:
+  # NOTE: please verify and complete this author list against the
+  # 2020 iScience paper before publishing the citation.
+  - type: article
+    title: >-
+      BacPipe: A Rapid, User-Friendly Whole-Genome Sequencing Pipeline
+      for Clinical Diagnostic Bacteriology
+    authors:
+      - family-names: Xavier
+        given-names: Basil Britto
+      - family-names: Mysara
+        given-names: Mohamed
+    journal: "iScience"
+    year: 2020
+    doi: "10.1016/j.isci.2019.100769"
+  - type: article
+    title: >-
+      AMRFinderPlus and the Reference Gene Catalog facilitate examination
+      of the genomic links among antimicrobial resistance, stress
+      response, and virulence
+    authors:
+      - family-names: Feldgarden
+        given-names: Michael
+      - family-names: Brover
+        given-names: Vyacheslav
+      - family-names: Klimke
+        given-names: William
+    journal: "Scientific Reports"
+    year: 2021
+    volume: 11
+    issue: 1
+    doi: "10.1038/s41598-021-91456-0"

@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.env
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# BacPipe outputs
+output/
+results/
+logs/
+*.log
+session_*/
+
+# Databases — too big for git
+databases/
+!databases/.gitkeep
+
+# Sequencing data — never commit
+*.fasta
+*.fa
+*.fna
+*.faa
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.sam
+*.cram
+*.bai
+*.gff
+*.gff3
+*.gbk
+*.vcf
+*.vcf.gz
+
+# Reference: keep tiny test fixtures by exception
+!tests/data/**/*.fasta
+!tests/data/**/*.fastq.gz
+
+# Node / Electron (when GUI is built locally)
+node_modules/
+.next/
+dist/
+build/
+
+# OS artefacts
+*.pid
+*.lock
